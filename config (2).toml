@@ -1,0 +1,20 @@
+[theme]
+base = "light"  # fallback if no preference detected
+
+[theme.light]
+primaryColor = "#335B74"          # your deep navy
+backgroundColor = "#EBEBEB"       # subtle light BG
+secondaryBackgroundColor = "#f0f4f8"  # inputs/sidebar
+textColor = "#1a1a1a"             # dark text for readability
+font = "Trebuchet MS"               # or try "serif" if preferred
+
+[theme.dark]
+primaryColor = "#1CADE4"          # lighter navy variant for dark mode visibility
+backgroundColor = "#2C3C43"       # Streamlit dark default (or custom #121212)
+secondaryBackgroundColor = "#1e293b"  # darker sidebar/inputs
+textColor = "#e2e8f0"             # light gray text
+font = "Trebuchet MS"
+
+[theme]
+# Optional global overrides (apply to both)
+primaryColor = "#335B74"          # light mode primary; dark uses override above
