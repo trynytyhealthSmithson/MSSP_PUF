@@ -2,4 +2,5 @@ streamlit
 pandas
 plotly
 numpy
-statsmodels
+streamlit-option-menu
+python-pptx
