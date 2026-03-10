@@ -244,7 +244,7 @@ if selected == "Program Changes":
         st.markdown("""
         The Medicare Shared Savings Program (MSSP) for Performance Year (PY) 2024 incorporated enhancements from the Calendar Year (CY) 2024 Physician Fee Schedule (PFS) Final Rule to advance value-based care, equity, and participation. These build on PY 2023 reforms, focusing on benchmarking fairness, assignment expansion, and quality alignment with MIPS.
         
-        Key impacts: Added assignment step increasing N_AB by ~760K, capped regional risk growth, eliminated negative regional adjustments, refined AIP, and introduced Medicare CQM collection. Overall, PY 2024 ACOs continued record savings while adapting to these updates.
+        Key impacts: Capped regional risk growth, eliminated negative regional adjustments, refined AIP, and introduced Medicare CQM collection. Overall, PY 2024 ACOs continued record savings while adapting to these updates.
         """)
         st.markdown("### Quality Program & Scoring")
         st.markdown("""
@@ -255,7 +255,7 @@ if selected == "Program Changes":
         st.markdown("### Beneficiary Assignment & Eligibility")
         st.markdown("""
         - Added third step to step-wise methodology (expanded 24-month lookback for NPs/PAs/CNSs delivering primary care).
-        - Revised "assignable beneficiary" definition — expected to increase assigned beneficiaries by >760,000.
+        - Revised "assignable beneficiary" definition.
         """)
         st.markdown("### Financial & Benchmark Impacts (for PY 2024)")
         st.markdown("""
@@ -276,7 +276,7 @@ if selected == "Program Changes":
         st.markdown("### Program Outcomes & Trends (PY 2024 vs PY 2023)")
         st.markdown("""
         - ACOs maintained quality improvements; savings trends continued with benchmarking tweaks favoring high-cost ACOs.
-        - Increased N_AB from assignment changes; potential for more ACO participation.
+        - Increased covered beneficiaries from assignment changes; potential for more ACO participation.
         """)
         st.markdown("### Helpful Links to CMS Resources")
         st.markdown("""
@@ -319,76 +319,72 @@ if selected == "Program Changes":
     else:
         # 2023 Program Changes from your attached 2023 script
         st.markdown("""
-        The Medicare Shared Savings Program (MSSP) for Performance Year (PY) 2023 incorporated enhancements from the Calendar Year (CY) 2023 Physician Fee Schedule (PFS) Final Rule to advance value-based care, equity, and participation. These build on prior reforms, focusing on benchmarking fairness, assignment expansion, and quality alignment with MIPS.
-        
-        Key impacts: Continued COVID-19 PHE flexibilities (all ACOs DisAffQual=1), expanded primary care codes, refined risk adjustment, and maintained sliding-scale quality scoring. ACOs achieved record savings in PY 2023.
+        The Medicare Shared Savings Program (MSSP) for Performance Year (PY) 2023 incorporated several enhancements from the Calendar Year (CY) 2023 Physician Fee Schedule (PFS) Final Rule to promote program growth, equity, and participation—particularly for ACOs serving rural, underserved, or high-risk populations. These built on prior reforms (e.g., Pathways to Success) while addressing trends like plateaued ACO growth, underrepresentation of high-spending beneficiaries, and access disparities for minority groups.
+    
+        Key PY 2023 impacts included a shift to sliding-scale quality scoring (replacing all-or-nothing thresholds), expanded beneficiary assignment codes, and continued COVID-related flexibilities (e.g., EUC adjustments). These directly affect PUF-reported metrics like QualScore, EarnSaveLoss, Sav_rate, and assignment (N_AB). Overall, PY 2023 ACOs delivered record net savings to Medicare ($2.1B) and improved on many quality measures compared to PY 2022.
         """)
         st.markdown("### Quality Program & Scoring")
         st.markdown("""
-        - Continued Medicare CQM collection under APP (introduced in prior years).
-        - Aligned completeness/benchmarking/scoring with MIPS; health equity adjustment refinements.
-        - Continued CEHRT alignment with MIPS PI; quarterly beneficiary eligibility lists.
+        - Transitioned from all-or-nothing quality performance standard to a sliding-scale approach for shared savings eligibility (effective PY 2023): ACOs below minimum thresholds still qualify for partial savings based on quality score + health equity adjustment bonus (up to 10 points for serving underserved populations when reporting all-payer measures).
+        - Extended incentives for eCQM/MIPS CQM reporting through PY 2024.
+        - Maintained health equity adjustment eligibility for ACOs with ≥20% beneficiaries in affected counties or legal entity in such areas (all ACOs received DisAffQual=1 in PY 2023 due to ongoing PHE for COVID-19).
         """)
         st.markdown("### Beneficiary Assignment & Eligibility")
         st.markdown("""
-        - Step-wise methodology with primary care codes for prospective assignment.
-        - "Assignable beneficiary" definition stable from prior years.
+        - Expanded primary care service codes eligible for prospective assignment (e.g., prolonged services, chronic pain management, certain behavioral health codes).
+        - Updated facility IDs (e.g., FQHCs/RHCs) to account for mid-year changes in assignment methodology.
         """)
         st.markdown("### Financial & Benchmark Impacts (for PY 2023)")
         st.markdown("""
-        - Regional HCC risk score growth factors applied.
-        - CMS-HCC model used for benchmark/performance years.
-        - Regional adjustment rules in place (negative adjustment possible).
-        """)
-        st.markdown("### Advance Investment Payments (AIP)")
-        st.markdown("""
-        - AIP policies in place; no major changes for PY 2023.
+        - No major benchmark methodology overhaul in PY 2023 (major prospective trend/ACPT and other adjustments apply starting agreement periods from Jan 1, 2024).
+        - Continued exclusion of certain IHS/Tribal/Puerto Rico supplement payments from FFS calculations but inclusion in revenue determinations.
         """)
         st.markdown("### Other Operational & Administrative")
         st.markdown("""
-        - Burden reductions continued; CMS Web Interface reporting used.
-        - CAHPS and claims-based measures unchanged.
+        - Reduced administrative burden: No pre-approval required for marketing materials; beneficiary notifications once per agreement period; simplified SNF 3-day rule waiver applications.
+        - Data reporting: Continued use of CMS Web Interface (with phase-out planned later); CAHPS and claims-based measures unchanged for PY 2023.
         """)
         st.markdown("### Program Outcomes & Trends (PY 2023 vs PY 2022)")
         st.markdown("""
-        - ACOs maintained quality improvements; record savings achieved.
-        - Stable N_AB; continued ACO participation growth.
+        - ACOs improved on required quality measures (e.g., diabetes/blood pressure control, cancer screenings, fall risk, statin therapy, depression screening/follow-up).
+        - Record savings: Over Two Billion net to Medicare, with ACOs earning over Three Billion in shared savings payments.
         """)
         st.markdown("### Helpful Links to CMS Resources")
         st.markdown("""
-        - [PY 2023 Financial and Quality Results PUF](https://data.cms.gov/medicare-shared-savings-program/performance-year-financial-and-quality-results) — Direct download.
-        - [All MSSP Public Use Files & Data Resources](https://www.cms.gov/medicare/payment/fee-for-service-providers/shared-savings-program-ssp-acos/data) — Historical PUFs, crosswalks.
-        - [CY 2023 PFS Final Rule – MSSP Fact Sheet](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2023-medicare-physician-fee-schedule-final-rule-medicare-shared-savings-program) — Official changes summary.
-        - [MSSP Statutes, Regulations & Guidance](https://www.cms.gov/medicare/payment/fee-for-service-providers/shared-savings-program-ssp-acos/statutes-regulations) — 42 CFR Part 425.
-        - [MSSP Program Overview & FAQs](https://www.cms.gov/medicare/payment/fee-for-service-providers/shared-savings-program-ssp-acos) — Resources and application info.
+        - [PY 2023 Financial and Quality Results PUF](https://data.cms.gov/medicare-shared-savings-program/performance-year-financial-and-quality-results) — Direct download for the data file used in this app.
+        - [All MSSP Public Use Files & Data Resources](https://www.cms.gov/medicare/payment/fee-for-service-providers/shared-savings-program-ssp-acos/data) — Includes historical PUFs, crosswalks, and methodology docs.
+        - [CY 2023 PFS Final Rule – MSSP Fact Sheet](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2023-medicare-physician-fee-schedule-final-rule-medicare-shared-savings-program) — Official summary of finalized changes.
+        - [MSSP Statutes, Regulations & Guidance](https://www.cms.gov/medicare/payment/fee-for-service-providers/shared-savings-program-ssp-acos/statutes-regulations) — Full regulatory text (42 CFR Part 425).
+        - [MSSP Program Overview & FAQs](https://www.cms.gov/medicare/payment/fee-for-service-providers/shared-savings-program-ssp-acos) — General resources and application info.
+        - [PY 2023 Performance Results Press Release](https://www.cms.gov/newsroom/press-releases/medicare-shared-savings-program-continues-deliver-meaningful-savings-and-high-quality-health-care) — Outcomes and quality improvements.
         """)
-        st.markdown("### Table: Key Technical/Data Changes in PY 2023 PUF (vs PY 2022)")
-        changes_data = {
+        st.markdown("### Table: Key Technical/Data Changes in PY 2023 PUF (vs Prior Years)")
+    changes_data = {
             "Aspect": ["Quality Scoring", "EUC/DisAffQual", "Assignment Codes", "Risk/County Data", "Savings/Losses Calc"],
             "PY 2023 Handling": [
-                "Continued Medicare CQM collection; MIPS alignment",
-                "All ACOs flagged =1 (COVID-19 PHE ongoing)",
-                "Step-wise methodology with primary care codes",
-                "Suppression unchanged (1-10 suppressed)",
-                "Regional adjustment rules applied"
+                "Sliding scale (partial savings based on score) + health equity bonus possible",
+                "All ACOs flagged =1 (due to COVID-19 PHE)",
+                "Expanded primary care codes",
+                "Suppression rules unchanged (1-10 assignable beneficiaries suppressed)",
+                "Sliding scale for shared savings; no MSR waiver changes for PY 2023"
             ],
-            "Impact on Data": [
-                "QualScore reflects MIPS alignment; affects EarnSaveLoss",
+            "Impact on PUF Data / App Calculations": [
+                "QualScore reflects MIPS + bonus; affects EarnSaveLoss/FinalShareRate",
                 "Applies to quality/financial adjustments",
-                "Stable N_AB",
-                "Weighted risk scores use valid PY data only",
-                "GenSaveLoss/EarnSaveLoss quality-adjusted"
+                "May increase N_AB in some ACOs",
+                "Weighted risk scores (e.g., CMS_HCC_RiskScore_*) use valid PY data only",
+                "GenSaveLoss/EarnSaveLoss reflect quality-adjusted sharing"
             ],
-            "Source": [
+            "Notes/Source": [
                 "CY 2023 PFS Final Rule",
-                "Data Dictionary (DisAffQual)",
-                "Final Rule assignment updates",
-                "County-Level FFS Methodology PUF",
+                "Data Dictionary (DisAffQual definition)",
+                "Final Rule beneficiary assignment updates",
+                "County-Level FFS Methodology PUF doc",
                 "Data Dictionary + Final Rule"
             ]
         }
-        df_changes = pd.DataFrame(changes_data)
-        st.dataframe(df_changes, use_container_width=True, hide_index=True)
+    df_changes = pd.DataFrame(changes_data)
+    st.dataframe(df_changes, use_container_width=True, hide_index=True)
 
 elif selected == "Overview":
     st.subheader("Program-Wide Totals")
