@@ -191,7 +191,7 @@ st.markdown(f"""
             right: 0 !important;
             width: 100% !important;
             height: 60px !important;
-            background: {'#f8f9fa' if theme_type != "dark" else '#0e1117'} !important;
+            background: {'#f8f9fa' if theme_type != "dark" else '#2C3C43'} !important;
             border-bottom: 1px solid {'#ddd' if theme_type != "dark" else '#333'} !important;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1) !important;
             z-index: 1000 !important;
@@ -387,7 +387,7 @@ if selected == "Program Changes":
     st.dataframe(df_changes, use_container_width=True, hide_index=True)
 
 elif selected == "Overview":
-    st.subheader("Program-Wide Totals")
+    st.subheader(f"Program-Wide Totals - PY{year}")
     cols = st.columns(6)
     cols[0].metric("Total ACOs", f"{len(df):,}")
     cols[1].metric("Total Assigned Beneficiaries", f"{df['N_AB'].sum():,}" if 'N_AB' in df.columns else "N/A")
@@ -652,7 +652,7 @@ elif selected == "Overview":
         st.info("CAHPS measures not available or all suppressed.")
 
 elif selected == "Single ACO View":
-    st.subheader("Single ACO View")
+    st.subheader(f"Single ACO View - PY{year}")
     aco_options = sorted(df["ACO_Name"].unique())
     selected_aco = st.selectbox("Select ACO", aco_options, index=0)
     aco_data = df[df["ACO_Name"] == selected_aco].iloc[0]
